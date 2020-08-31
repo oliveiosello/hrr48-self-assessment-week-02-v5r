@@ -18,7 +18,7 @@ ul {
     border: solid #ddd;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
-    border-radius: 15px; 
+    border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
     font: 16px/34px Helvetica;
@@ -69,7 +69,7 @@ ul {
     border: solid #ddd;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
-    border-radius: 15px; 
+    border-radius: 15px;
     font: 16px/24px Helvetica;
     float: left;
 }
@@ -88,7 +88,7 @@ ul {
     font-weight: bold;
 }
 #main,#post,#rooms {
-    padding: 20px 40px 20px; 
+    padding: 20px 40px 20px;
     color: #82756f;
     background: #f5edee;
     border: solid #ddd;
@@ -107,7 +107,7 @@ ul {
     height: 40px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px; 
+    border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
     outline: 1px dashed #f5edee;
@@ -132,7 +132,7 @@ ul {
     text-align: left;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
-    border-radius: 15px; 
+    border-radius: 15px;
     font: 16px/24px Helvetica;
     float:left;
 }#rooms a {
@@ -148,7 +148,7 @@ ul {
     padding: 8px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 .userInput{
     width: 280px;
@@ -156,7 +156,7 @@ ul {
     padding: 10px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 .highlight {
     font-weight: bold;

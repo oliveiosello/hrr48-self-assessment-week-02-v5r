@@ -39,12 +39,47 @@ var makeFlyingHorse = function(name, color) {
 // Here's some starter code to get you going!
 // Do not use the ES6 `class` keyword; use ES5 to create your classes.
 
+
+// diffs in style:
+//   prototype, call, apply
+//     methods outside of class
+//   this
+//   do not need to return (ex msgs)
+
+// create horse class
+//   est method on horse class
+// create fly horse class
+//   set inheretence from parent horse
+//   add unique traits
+//   set proto and constructor
+//   create method on fly horse class
+
 var Horse = function(name) {
+  this.name = name;
 };
 
-
+Horse.prototype.goSomewhere = function(dest) {
+  return `${name} is galloping to ${dest} !`;
+};
 
 var FlyingHorse = function(name, color) {
+  Horse.call(this, name);
+  this.color = color;
 };
+
+FlyingHorse.prototype.goSomewhere = function(dest, milesToDest) {
+  if (milesToDest < 10) {
+    return Horse.goSomewhere.call(this, dest);
+  } else {
+    return `${name} is flying to ${dest} !`;
+  }
+};
+
+FlyingHorse.prototype = Object.create(Horse.prototype);
+FlyingHorse.constructor = FlyingHorse;
+
+
+
+
 
 
