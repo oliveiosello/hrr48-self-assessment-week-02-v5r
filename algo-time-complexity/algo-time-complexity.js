@@ -91,7 +91,7 @@ var hasDuplicates = function(array) {
 
 
 
-var removeLastThreeElementsTimeComplexity =  TimeComplexity.LINEAR; // TODO: Update this constant
+var removeLastThreeElementsTimeComplexity =  TimeComplexity.CONSTANT; // TODO: Update this constant
 
 var removeLastThreeElements = function(array) {
   var numberOfElementsToRemove = 3;
@@ -102,7 +102,7 @@ var removeLastThreeElements = function(array) {
 };
 
 
-var increasingStepTimeComplexity =  TimeComplexity.LINEAR; // TODO: Update this constant
+var increasingStepTimeComplexity =  TimeComplexity.LOGARITHMIC; // TODO: Update this constant
 
 var increasingStep = function(number) {
   for (var i = 1; i < number; i = i * 2) {
@@ -111,7 +111,7 @@ var increasingStep = function(number) {
 };
 
 
-var makeRangeTimeComplexity =  TimeComplexity.QUADRATIC; // TODO: Update this constant
+var makeRangeTimeComplexity =  TimeComplexity.LINEAR; // TODO: Update this constant
 
 var makeRange = function(array) {
   array.forEach(function(item) {

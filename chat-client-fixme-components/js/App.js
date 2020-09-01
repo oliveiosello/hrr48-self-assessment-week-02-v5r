@@ -6,7 +6,7 @@ var App = {
   initialize: function () {
     // fetch messages and set up repeating fetch
     App.fetch();
-    
+
     // WARNING: DO NOT MODIFY THE INTERVAL TO BE LESS THAN 1000ms
     // doing so will result in ALL CAMPUSES LOSING ACCESS to parse
     // and students will NOT BE ABLE TO TEST their code -- including YOU!
@@ -23,6 +23,14 @@ var App = {
     var username = $('#username').val();
 
     Messages.create(text, username);
+
+    var message = {
+      username: username,
+      text: text,
+      createdAt: new Date()
+    }
+
+    MessagesView.renderMessage(message);
 
     $('.userInput').val('');
   },

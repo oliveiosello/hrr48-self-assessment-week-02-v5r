@@ -59,7 +59,7 @@ var Horse = function(name) {
 };
 
 Horse.prototype.goSomewhere = function(dest) {
-  return `${name} is galloping to ${dest} !`;
+  return name + ' is galloping to ' + dest + '!';
 };
 
 var FlyingHorse = function(name, color) {
@@ -69,9 +69,9 @@ var FlyingHorse = function(name, color) {
 
 FlyingHorse.prototype.goSomewhere = function(dest, milesToDest) {
   if (milesToDest < 10) {
-    return Horse.goSomewhere.call(this, dest);
+    return Horse.prototype.goSomewhere.call(this, dest);
   } else {
-    return `${name} is flying to ${dest} !`;
+    return name + ' is flying to ' + dest '!';
   }
 };
 
