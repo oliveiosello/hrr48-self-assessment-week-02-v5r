@@ -71,7 +71,7 @@ FlyingHorse.prototype.goSomewhere = function(dest, milesToDest) {
   if (milesToDest < 10) {
     return Horse.prototype.goSomewhere.call(this, dest);
   } else {
-    return name + ' is flying to ' + dest '!';
+    return name + ' is flying to ' + dest + '!';
   }
 };
 
